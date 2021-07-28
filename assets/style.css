@@ -1,0 +1,53 @@
+body{
+  text-align:center;
+  padding:30px;
+  background:#DDDDDD;
+}
+
+div, button{
+  margin:0 auto;
+}
+
+button{
+  border:none;
+  background:#f07676;
+  color: #FFFFFF;
+  border-radius: 30px;
+  height:60px;
+  line-height:60px;
+  font-size:24px;
+  font-weight:bold;
+  display:block;
+  padding:0 30px;
+}
+
+button:hover{
+  background:#cf5a5a
+}
+
+button:active{
+  background:#943f3f
+}
+
+#counter{
+  padding:30px;
+  border-radius: 30px;
+  background:#FFFFFF;
+  display:inline-block;
+  width:200px;
+  font-size:36px;
+  font-weight:bold;
+  position:relative;
+}
+
+#counter:before{
+  content: ' ';
+  width: 0;
+  height: 0;
+  border: #FFFFFF 20px solid;
+  border-color: #FFFFFF transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left:-20px;
+}
