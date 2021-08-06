@@ -1,16 +1,49 @@
 <html>
-<head>
-  <title>Webpack Tutorial</title>
-  <link rel="stylesheet" href="assets/style/main.css">
-  <script src="./index.js"></script>
-</head>
-<body>
-  <div id="counter">
-    0
-  </div>
-  <div id="box">
-    <img src="assets/images/box.png" alt="我是一個箱子"/>
-  </div>
-  <button id="btnAdd">點我！</button>
-</body>
+  <head>
+    <title>ZZU Webpack Tutorial</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        <a href="https://www.youtube.com/watch?v=ZvR0lHo6xvE" target="_blank"
+          >簡單易懂的Webpack打包法！【網頁前端座談會】【りりゆのお茶会】</a
+        >
+      </p>
+    </header>
+    <div id="counter">0</div>
+    <div id="box">
+      <img
+        class="show"
+        src="<%=require('./assets/images/heart1.png')%>"
+        alt="我是第一顆愛心"
+      />
+      <img
+        class="hide"
+        src="<%=require('./assets/images/heart2.png')%>"
+        alt="我是第二顆愛心"
+      />
+      <img
+        class="hide"
+        src="<%=require('./assets/images/heart3.png')%>"
+        alt="我是第三顆愛心"
+      />
+      <img
+        class="hide"
+        src="<%=require('./assets/images/heart4.png')%>"
+        alt="我是第四顆愛心"
+      />
+    </div>
+    <button id="btnAdd">點我！</button>
+    <footer>
+      <p>
+        <a href="./about.html">關於此網站</a>｜
+        <a href="https://github.com/ririyu-vtuber/chapter2-webpack-tutorial" target="_blank"
+          >Ririyu's repo</a
+        >｜
+        <a href="https://github.com/harukaxxxx/chapter2-webpack-tutorial" target="_blank"
+          >My repo</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
